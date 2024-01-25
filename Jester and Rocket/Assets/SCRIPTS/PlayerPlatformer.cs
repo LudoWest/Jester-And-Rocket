@@ -19,9 +19,15 @@ public class PlayerPlatformer : MonoBehaviour
     [SerializeField]
     float squashStretchCutoff = 0.5f;
     [SerializeField]
+    private float moveRotationFactor = 1.0f;
+    [SerializeField]
+    private float moveRotationSpeed = 2.0f;
+    [SerializeField]
     Transform playerSprite = null;
     [SerializeField]
     float fallShakeMultiplier = 0.025f;
+
+    private float currentRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -103,6 +109,10 @@ public class PlayerPlatformer : MonoBehaviour
             RB.velocity = new Vector2(RB.velocity.x, jumpHeight);
             jumpTimer = 0.0f;
         }
+
+        //Change the player sprite's rotation based on X velocity.
+        currentRotation = Mathf.Lerp(currentRotation, RB.velocity.x, Time.deltaTime * moveRotationSpeed);
+        playerSprite.Rotate(Vector3.forward,currentRotation * moveRotationFactor - playerSprite.localRotation.z * Mathf.Rad2Deg);
 
         //Change the player sprite's X size based on Y velocity.
         playerSprite.localScale = new Vector3(Mathf.Lerp(1.0f, 0.6f, Mathf.Abs(RB.velocity.y * 0.1f) - squashStretchCutoff), 1, 1);
