@@ -29,7 +29,7 @@ public class GunController : MonoBehaviour
     //private SoundManager audioCue;
 
 
-    private bool reloading = false;
+    public bool reloading = false;
     private float reloadTimer = -1.0f;
 
     // Start is called before the first frame update
