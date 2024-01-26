@@ -16,9 +16,13 @@ public class RocketScript : MonoBehaviour
     private float rocketExplosionForce = 100;
 
     [SerializeField]
+    private GameObject explosionParticles;
+
+    [SerializeField]
     private float despawnTimer = 1;
 
     private float realSpeed;
+    private bool blowedUp = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,14 +45,13 @@ public class RocketScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if(collision.tag != "Player")
+        if(collision.tag != "Player" && !blowedUp)
         {
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
             foreach (Collider2D hitCollider in hitColliders)
             {
                 if (hitCollider.gameObject.GetComponent<Explodable>())
                 {
-                    Debug.Log(hitCollider.gameObject.name);
                     hitCollider.GetComponent<Explodable>().explode();
                 }
             }
@@ -67,8 +70,13 @@ public class RocketScript : MonoBehaviour
             {
                 transform.GetChild(0).GetComponent<ParticleSystem>().Stop();
                 transform.GetChild(0).SetParent(null, false);
-                Destroy(this.gameObject);
             }
+
+            Debug.Log("Boom");
+            GameObject explosion = Instantiate(explosionParticles);
+            explosion.transform.position = transform.position;
+            Destroy(this.gameObject);
+            blowedUp = true;
         }
     }
 
