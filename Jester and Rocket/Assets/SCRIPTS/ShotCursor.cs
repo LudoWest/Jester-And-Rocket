@@ -26,13 +26,11 @@ public class ShotCursor : MonoBehaviour
     {
         canvasRef = GameObject.Find("Canvas").GetComponent<Canvas>();
         Cursor.visible = false;
-        Debug.Log(Cursor.visible);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Cursor.visible);
         scaleFactor = canvasRef.GetComponent<Canvas>().scaleFactor;
 
         Vector3 mouseScreenPos = Input.mousePosition;
