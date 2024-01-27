@@ -1126,9 +1126,10 @@ GameObject:
   - component: {fileID: 197980414}
   - component: {fileID: 197980413}
   - component: {fileID: 197980412}
+  - component: {fileID: 197980417}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1279,6 +1280,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197980417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197980411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &221216953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,9 +1306,10 @@ GameObject:
   - component: {fileID: 221216956}
   - component: {fileID: 221216955}
   - component: {fileID: 221216954}
+  - component: {fileID: 221216959}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1441,6 +1456,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &221216959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221216953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &244583011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,9 +1482,10 @@ GameObject:
   - component: {fileID: 244583014}
   - component: {fileID: 244583013}
   - component: {fileID: 244583012}
+  - component: {fileID: 244583017}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1603,6 +1632,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &244583017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244583011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &286835517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,9 +1658,10 @@ GameObject:
   - component: {fileID: 286835520}
   - component: {fileID: 286835519}
   - component: {fileID: 286835518}
+  - component: {fileID: 286835523}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1765,6 +1808,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &286835523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286835517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &311929432
 Mesh:
   m_ObjectHideFlags: 0
@@ -2016,9 +2072,10 @@ GameObject:
   - component: {fileID: 344413379}
   - component: {fileID: 344413378}
   - component: {fileID: 344413377}
+  - component: {fileID: 344413382}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2166,6 +2223,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344413382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344413376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &354513892
 Mesh:
   m_ObjectHideFlags: 0
@@ -2726,9 +2796,10 @@ GameObject:
   - component: {fileID: 390518306}
   - component: {fileID: 390518305}
   - component: {fileID: 390518304}
+  - component: {fileID: 390518309}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2876,6 +2947,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390518309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390518303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &406206117
 Mesh:
   m_ObjectHideFlags: 0
@@ -3054,9 +3138,10 @@ GameObject:
   - component: {fileID: 422504078}
   - component: {fileID: 422504077}
   - component: {fileID: 422504076}
+  - component: {fileID: 422504081}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3203,6 +3288,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422504081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422504075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &423557221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,9 +3314,10 @@ GameObject:
   - component: {fileID: 423557224}
   - component: {fileID: 423557223}
   - component: {fileID: 423557222}
+  - component: {fileID: 423557227}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3364,6 +3463,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423557227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423557221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &442754767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3508,9 +3620,10 @@ GameObject:
   - component: {fileID: 463890534}
   - component: {fileID: 463890533}
   - component: {fileID: 463890532}
+  - component: {fileID: 463890537}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3656,6 +3769,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463890537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463890531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &468012425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,9 +3795,10 @@ GameObject:
   - component: {fileID: 468012428}
   - component: {fileID: 468012427}
   - component: {fileID: 468012426}
+  - component: {fileID: 468012431}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3817,6 +3944,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468012431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468012425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &468972536
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,9 +3970,10 @@ GameObject:
   - component: {fileID: 468972539}
   - component: {fileID: 468972538}
   - component: {fileID: 468972537}
+  - component: {fileID: 468972542}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3979,6 +4120,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468972542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468972536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &472880111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,9 +4146,10 @@ GameObject:
   - component: {fileID: 472880114}
   - component: {fileID: 472880113}
   - component: {fileID: 472880112}
+  - component: {fileID: 472880117}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4143,6 +4298,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &472880117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472880111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &481181190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,9 +5388,10 @@ GameObject:
   - component: {fileID: 684852844}
   - component: {fileID: 684852843}
   - component: {fileID: 684852842}
+  - component: {fileID: 684852847}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5368,6 +5537,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &684852847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684852841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &687891428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,9 +5563,10 @@ GameObject:
   - component: {fileID: 687891431}
   - component: {fileID: 687891430}
   - component: {fileID: 687891429}
+  - component: {fileID: 687891434}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5531,6 +5714,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &687891434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687891428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &695233965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,9 +5740,10 @@ GameObject:
   - component: {fileID: 695233968}
   - component: {fileID: 695233967}
   - component: {fileID: 695233966}
+  - component: {fileID: 695233971}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5697,6 +5894,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &695233971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695233965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &705596742
 GameObject:
   m_ObjectHideFlags: 0
@@ -5710,9 +5920,10 @@ GameObject:
   - component: {fileID: 705596745}
   - component: {fileID: 705596744}
   - component: {fileID: 705596743}
+  - component: {fileID: 705596748}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5861,6 +6072,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705596748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705596742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &750591805
 Mesh:
   m_ObjectHideFlags: 0
@@ -6204,9 +6428,10 @@ GameObject:
   - component: {fileID: 757223083}
   - component: {fileID: 757223082}
   - component: {fileID: 757223081}
+  - component: {fileID: 757223086}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6352,6 +6577,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757223086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757223080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &758116422
 GameObject:
   m_ObjectHideFlags: 0
@@ -6365,9 +6603,10 @@ GameObject:
   - component: {fileID: 758116425}
   - component: {fileID: 758116424}
   - component: {fileID: 758116423}
+  - component: {fileID: 758116428}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6515,6 +6754,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &758116428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758116422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &769317258
 GameObject:
   m_ObjectHideFlags: 0
@@ -6528,9 +6780,10 @@ GameObject:
   - component: {fileID: 769317261}
   - component: {fileID: 769317260}
   - component: {fileID: 769317259}
+  - component: {fileID: 769317264}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6678,6 +6931,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769317264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769317258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &775338554
 GameObject:
   m_ObjectHideFlags: 0
@@ -6691,9 +6957,10 @@ GameObject:
   - component: {fileID: 775338557}
   - component: {fileID: 775338556}
   - component: {fileID: 775338555}
+  - component: {fileID: 775338560}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6839,6 +7106,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775338560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775338554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &819255992
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,9 +7148,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 058d77b8c99a1de428966409a8e9cb7d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 277af0ff946a1cc41b969dc75a392ce2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7012,9 +7292,10 @@ GameObject:
   - component: {fileID: 824454301}
   - component: {fileID: 824454300}
   - component: {fileID: 824454299}
+  - component: {fileID: 824454304}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7162,6 +7443,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824454304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824454298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!21 &857750621
 Material:
   serializedVersion: 8
@@ -7215,9 +7509,10 @@ GameObject:
   - component: {fileID: 879300486}
   - component: {fileID: 879300485}
   - component: {fileID: 879300484}
+  - component: {fileID: 879300489}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7363,6 +7658,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879300489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879300483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!21 &898934492
 Material:
   serializedVersion: 8
@@ -7581,9 +7889,10 @@ GameObject:
   - component: {fileID: 925619787}
   - component: {fileID: 925619786}
   - component: {fileID: 925619785}
+  - component: {fileID: 925619790}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7730,6 +8039,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925619790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925619784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &951179462
 Mesh:
   m_ObjectHideFlags: 0
@@ -7908,9 +8230,10 @@ GameObject:
   - component: {fileID: 982303470}
   - component: {fileID: 982303469}
   - component: {fileID: 982303468}
+  - component: {fileID: 982303473}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8057,6 +8380,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &982303473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982303467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &983429051
 GameObject:
   m_ObjectHideFlags: 0
@@ -8070,9 +8406,10 @@ GameObject:
   - component: {fileID: 983429054}
   - component: {fileID: 983429053}
   - component: {fileID: 983429052}
+  - component: {fileID: 983429057}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8222,6 +8559,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &983429057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983429051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &992844031
 Mesh:
   m_ObjectHideFlags: 0
@@ -8476,9 +8826,10 @@ GameObject:
   - component: {fileID: 1014657615}
   - component: {fileID: 1014657614}
   - component: {fileID: 1014657613}
+  - component: {fileID: 1014657618}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8625,6 +8976,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014657618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014657612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1025857278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8638,9 +9002,10 @@ GameObject:
   - component: {fileID: 1025857281}
   - component: {fileID: 1025857280}
   - component: {fileID: 1025857279}
+  - component: {fileID: 1025857284}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8788,6 +9153,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1025857284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025857278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1046626281
 Mesh:
   m_ObjectHideFlags: 0
@@ -9124,9 +9502,10 @@ GameObject:
   - component: {fileID: 1069079773}
   - component: {fileID: 1069079772}
   - component: {fileID: 1069079771}
+  - component: {fileID: 1069079776}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9272,6 +9651,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069079776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069079770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1069119449
 GameObject:
   m_ObjectHideFlags: 0
@@ -9977,9 +10369,10 @@ GameObject:
   - component: {fileID: 1125362617}
   - component: {fileID: 1125362616}
   - component: {fileID: 1125362615}
+  - component: {fileID: 1125362620}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10126,6 +10519,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1125362620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125362614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!21 &1158976665
 Material:
   serializedVersion: 8
@@ -10344,9 +10750,10 @@ GameObject:
   - component: {fileID: 1200649481}
   - component: {fileID: 1200649480}
   - component: {fileID: 1200649479}
+  - component: {fileID: 1200649484}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10492,6 +10899,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1200649484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200649478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1208186700
 Mesh:
   m_ObjectHideFlags: 0
@@ -11205,9 +11625,10 @@ GameObject:
   - component: {fileID: 1237417570}
   - component: {fileID: 1237417569}
   - component: {fileID: 1237417568}
+  - component: {fileID: 1237417573}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11354,6 +11775,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237417573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237417567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1248617155
 Mesh:
   m_ObjectHideFlags: 0
@@ -11862,9 +12296,10 @@ GameObject:
   - component: {fileID: 1284725053}
   - component: {fileID: 1284725052}
   - component: {fileID: 1284725051}
+  - component: {fileID: 1284725056}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12011,6 +12446,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1284725056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284725050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1290617262
 GameObject:
   m_ObjectHideFlags: 0
@@ -12024,9 +12472,10 @@ GameObject:
   - component: {fileID: 1290617265}
   - component: {fileID: 1290617264}
   - component: {fileID: 1290617263}
+  - component: {fileID: 1290617268}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12174,6 +12623,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1290617268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290617262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1292943205
 GameObject:
   m_ObjectHideFlags: 0
@@ -12187,9 +12649,10 @@ GameObject:
   - component: {fileID: 1292943208}
   - component: {fileID: 1292943207}
   - component: {fileID: 1292943206}
+  - component: {fileID: 1292943211}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12335,6 +12798,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292943211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292943205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1363605754
 Mesh:
   m_ObjectHideFlags: 0
@@ -12513,9 +12989,10 @@ GameObject:
   - component: {fileID: 1374016126}
   - component: {fileID: 1374016125}
   - component: {fileID: 1374016124}
+  - component: {fileID: 1374016129}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12662,6 +13139,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374016129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374016123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1390259078
 Mesh:
   m_ObjectHideFlags: 0
@@ -13005,9 +13495,10 @@ GameObject:
   - component: {fileID: 1406601638}
   - component: {fileID: 1406601637}
   - component: {fileID: 1406601636}
+  - component: {fileID: 1406601641}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13155,6 +13646,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1406601641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406601635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1414090209
 Mesh:
   m_ObjectHideFlags: 0
@@ -13498,9 +14002,10 @@ GameObject:
   - component: {fileID: 1455099458}
   - component: {fileID: 1455099457}
   - component: {fileID: 1455099456}
+  - component: {fileID: 1455099461}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13647,6 +14152,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1455099461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455099455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1470274408
 Mesh:
   m_ObjectHideFlags: 0
@@ -13938,9 +14456,10 @@ GameObject:
   - component: {fileID: 1482642892}
   - component: {fileID: 1482642891}
   - component: {fileID: 1482642890}
+  - component: {fileID: 1482642895}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14087,6 +14606,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1482642895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482642889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1509303296
 Mesh:
   m_ObjectHideFlags: 0
@@ -14265,9 +14797,10 @@ GameObject:
   - component: {fileID: 1518089152}
   - component: {fileID: 1518089151}
   - component: {fileID: 1518089150}
+  - component: {fileID: 1518089155}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14413,6 +14946,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1518089155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518089149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1526344041
 Mesh:
   m_ObjectHideFlags: 0
@@ -15086,9 +15632,10 @@ GameObject:
   - component: {fileID: 1646872366}
   - component: {fileID: 1646872365}
   - component: {fileID: 1646872364}
+  - component: {fileID: 1646872369}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15234,6 +15781,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1646872369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646872363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1676130900
 GameObject:
   m_ObjectHideFlags: 0
@@ -15247,9 +15807,10 @@ GameObject:
   - component: {fileID: 1676130903}
   - component: {fileID: 1676130902}
   - component: {fileID: 1676130901}
+  - component: {fileID: 1676130906}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15404,6 +15965,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676130906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676130900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1677293163
 Mesh:
   m_ObjectHideFlags: 0
@@ -15747,9 +16321,10 @@ GameObject:
   - component: {fileID: 1693896356}
   - component: {fileID: 1693896355}
   - component: {fileID: 1693896354}
+  - component: {fileID: 1693896359}
   m_Layer: 0
   m_Name: tile_brick piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15900,6 +16475,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363796373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1693896359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693896353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1718584760
 GameObject:
   m_ObjectHideFlags: 0
@@ -15913,9 +16501,10 @@ GameObject:
   - component: {fileID: 1718584763}
   - component: {fileID: 1718584762}
   - component: {fileID: 1718584761}
+  - component: {fileID: 1718584766}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16063,6 +16652,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718584766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718584760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &1792235002
 GameObject:
   m_ObjectHideFlags: 0
@@ -16525,9 +17127,10 @@ GameObject:
   - component: {fileID: 1870346659}
   - component: {fileID: 1870346658}
   - component: {fileID: 1870346657}
+  - component: {fileID: 1870346662}
   m_Layer: 0
   m_Name: tile_brick (1) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16674,6 +17277,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1208329765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1870346662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870346656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &1888026157
 Mesh:
   m_ObjectHideFlags: 0
@@ -17182,9 +17798,10 @@ GameObject:
   - component: {fileID: 1995269828}
   - component: {fileID: 1995269827}
   - component: {fileID: 1995269826}
+  - component: {fileID: 1995269831}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17330,6 +17947,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995269831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995269825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &2001155878
 GameObject:
   m_ObjectHideFlags: 0
@@ -17343,9 +17973,10 @@ GameObject:
   - component: {fileID: 2001155881}
   - component: {fileID: 2001155880}
   - component: {fileID: 2001155879}
+  - component: {fileID: 2001155884}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17491,6 +18122,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2001155884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001155878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!43 &2068920809
 Mesh:
   m_ObjectHideFlags: 0
@@ -17669,9 +18313,10 @@ GameObject:
   - component: {fileID: 2078841937}
   - component: {fileID: 2078841936}
   - component: {fileID: 2078841935}
+  - component: {fileID: 2078841940}
   m_Layer: 0
   m_Name: tile_brick (2) piece
-  m_TagString: Untagged
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17817,6 +18462,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1087072010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2078841940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078841934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e7d26218b2af498add5d09c00f37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroying: 0
 --- !u!1 &2130504539
 GameObject:
   m_ObjectHideFlags: 0

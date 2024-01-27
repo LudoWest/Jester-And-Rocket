@@ -123,7 +123,7 @@ public class PlayerPlatformer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if(collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Rubble")
         {
             grounded = true;
             if(previousVelocity.magnitude * fallShakeMultiplier > 0.4f)
@@ -136,7 +136,7 @@ public class PlayerPlatformer : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Rubble")
         {
             grounded = false;
         }

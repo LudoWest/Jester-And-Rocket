@@ -61,7 +61,11 @@ public class RocketScript : MonoBehaviour
             {
                 if (chunkCollider.attachedRigidbody && chunkCollider.tag != "Ground")
                 {
-                    chunkCollider.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
+                    if(chunkCollider.tag == "Rubble")
+                    {
+                        chunkCollider.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
+                        chunkCollider.GetComponent<RubbleScript>().destroying = true;
+                    }
                     chunkCollider.attachedRigidbody.velocity += (Vector2)((chunkCollider.transform.position - transform.position).normalized * rocketExplosionForce);
                 }
             }
