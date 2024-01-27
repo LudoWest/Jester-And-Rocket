@@ -19,9 +19,13 @@ public class RoundScript : MonoBehaviour
     private AudioSource song;
 
     [SerializeField]
-    private CameraController mainCamScript;
+    private Image destructoMeter;
+    private float destructoMeterCurrentScore;
+    [SerializeField]
+    private float destructoMeterMaxScore;
 
-    private float roundTime = 0;
+    [SerializeField]
+    private CameraController mainCamScript;
 
     // Start is called before the first frame update
     void Start()
@@ -55,13 +59,20 @@ public class RoundScript : MonoBehaviour
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
         }
 
-        roundTime += Time.deltaTime;
+        destructoMeter.fillAmount = Mathf.Lerp(destructoMeter.fillAmount, destructoMeterCurrentScore / destructoMeterMaxScore, Time.deltaTime);
 
         Color newShadeColor = Color.black;
         newShadeColor.a = Mathf.Lerp(0.5f, 0.0f, Time.timeScale);
         pauseShade.color = newShadeColor;
 
         song.pitch = Time.timeScale;
+    }
+
+    //EVENTS CODE... HERE??
+    //I GENUINELY DONT UNDERSTAND HOW EVENTS WORK BUT IF THIS GETS CALLED THEN ALL IS GOOD
+    void AddScore(float scoreToAdd)
+    {
+        destructoMeterCurrentScore += scoreToAdd;
     }
 
 }

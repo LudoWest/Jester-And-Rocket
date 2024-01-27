@@ -9,6 +9,10 @@ public class RubbleScript : MonoBehaviour
     //[SerializeField]
     private float shrinkSpeed = 2.0f;
 
+    [SerializeField]
+    private int points = 5;
+    private bool pointsRewarded = false;
+
     public bool destroying = false;
 
     // Start is called before the first frame update
@@ -22,14 +26,16 @@ public class RubbleScript : MonoBehaviour
     {
         if (destroying)
         {
-            timeToDestroy -= Time.deltaTime;
-            if(true)
+            if (!pointsRewarded)
             {
-                transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, timeToDestroy * 0.1f);
-                if(transform.localScale.x < 0.1f)
-                {
-                    Destroy(this.gameObject);
-                }
+                //EVENTS CODE HERE
+                pointsRewarded = true;
+            }
+            timeToDestroy -= Time.deltaTime;
+            transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, timeToDestroy * 0.1f);
+            if (transform.localScale.x < 0.1f)
+            {
+                Destroy(this.gameObject);
             }
         }
     }
