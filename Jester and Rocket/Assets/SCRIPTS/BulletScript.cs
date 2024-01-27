@@ -23,6 +23,7 @@ public class RocketScript : MonoBehaviour
 
     private float realSpeed;
     private bool blowedUp = false;
+    private bool rubbled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +66,10 @@ public class RocketScript : MonoBehaviour
                     {
                         chunkCollider.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
                         chunkCollider.GetComponent<RubbleScript>().destroying = true;
+                        if (!rubbled)
+                        {
+                            Camera.main.GetComponent<SoundScript>().PlaySounds(1, true);
+                        }
                     }
                     chunkCollider.attachedRigidbody.velocity += (Vector2)((chunkCollider.transform.position - transform.position).normalized * rocketExplosionForce);
                 }
@@ -79,6 +84,7 @@ public class RocketScript : MonoBehaviour
             Debug.Log("Boom");
             GameObject explosion = Instantiate(explosionParticles);
             explosion.transform.position = transform.position;
+            Camera.main.GetComponent<SoundScript>().PlaySounds(3, true);
             Destroy(this.gameObject);
             blowedUp = true;
         }
