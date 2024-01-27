@@ -25,8 +25,8 @@ public class GunController : MonoBehaviour
     private CameraController cameraShaker;
     [SerializeField]
     private GameObject rocketPrefab;
-    //[SerializeField]
-    //private SoundManager audioCue;
+    [SerializeField]
+    private SoundScript audioCue;
 
 
     public bool reloading = false;
@@ -54,7 +54,7 @@ public class GunController : MonoBehaviour
                 gunReactor.ReactRight(gunReactionForce);
                 gunReactor.ReactRot(gunReactionRotForce);
                 cameraShaker.CameraShake(gunCameraShakeForce);
-                //audioCue.PlaySoundRange(2, 0.8f, 1.2f);
+                audioCue.PlaySounds(2,true);
                 GameObject newRocket = Instantiate(rocketPrefab);
                 newRocket.transform.position = transform.position;
                 newRocket.transform.rotation = transform.rotation;
@@ -69,7 +69,6 @@ public class GunController : MonoBehaviour
                 {
                     reloading = false;
                     reloadTimer = -reloadDelay;
-                    //audioCue.PlaySoundRange(4, 0.9f, 1.1f);
                 }
             }
         }

@@ -23,9 +23,9 @@ public class RubbleScript : MonoBehaviour
         if (destroying)
         {
             timeToDestroy -= Time.deltaTime;
-            if(timeToDestroy < 0)
+            if(true)
             {
-                transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, Time.deltaTime * shrinkSpeed);
+                transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, timeToDestroy * 0.1f);
                 if(transform.localScale.x < 0.1f)
                 {
                     Destroy(this.gameObject);
