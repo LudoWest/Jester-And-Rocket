@@ -35,10 +35,16 @@ public class RoundScript : MonoBehaviour
 
         pauseIcon2.AltSizeTeleport();
         pauseIcon2.SwitchSize();
+
+		RubbleScript.OnRubbleDestroyed += RubbleScript_OnRubbleDestroyed;
     }
 
-    // Update is called once per frame
-    void Update()
+	private void RubbleScript_OnRubbleDestroyed(object sender, RubbleScript.OnRubbleDestroyedEventArgs e) {
+		AddScore(e.pointsToAdd);
+	}
+
+	// Update is called once per frame
+	void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {

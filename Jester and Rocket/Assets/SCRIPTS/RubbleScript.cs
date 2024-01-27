@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,12 @@ public class RubbleScript : MonoBehaviour
 
     public bool destroying = false;
 
+    //events.
+    public static event EventHandler<OnRubbleDestroyedEventArgs> OnRubbleDestroyed;
+    public class OnRubbleDestroyedEventArgs : EventArgs {
+        public int pointsToAdd;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +36,9 @@ public class RubbleScript : MonoBehaviour
             if (!pointsRewarded)
             {
                 //EVENTS CODE HERE
+                OnRubbleDestroyed?.Invoke(this, new OnRubbleDestroyedEventArgs {
+                    pointsToAdd = points
+                });
                 pointsRewarded = true;
             }
             timeToDestroy -= Time.deltaTime;
