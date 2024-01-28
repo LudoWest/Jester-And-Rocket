@@ -10,8 +10,7 @@ public class RubbleScript : MonoBehaviour
     //[SerializeField]
     private float shrinkSpeed = 2.0f;
 
-    [SerializeField]
-    private int points = 5;
+    private int points = 1;
     private bool pointsRewarded = false;
 
     public bool destroying = false;
