@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     private TMP_Text text;
 
     private float timer = 180.0f;
-    private bool isTimer = true;
+    private bool isTimer = false;
 
     // Start is called before the first frame update
     void Start()

@@ -8,6 +8,8 @@ public class SoundScript : MonoBehaviour
     private List<AudioClip> sounds = new List<AudioClip>();
     [SerializeField]
     private GameObject soundPrefab;
+    [SerializeField]
+    private GameObject echoSoundPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,13 @@ public class SoundScript : MonoBehaviour
         {
             newsound.GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.2f);
         }
+        newsound.GetComponent<AudioSource>().Play();
+    }
+
+    public void PlaySoundsEcho(int soundID)
+    {
+        GameObject newsound = Instantiate(echoSoundPrefab);
+        newsound.GetComponent<AudioSource>().clip = sounds[soundID];
         newsound.GetComponent<AudioSource>().Play();
     }
 }

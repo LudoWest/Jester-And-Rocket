@@ -27,6 +27,24 @@ public class RoundScript : MonoBehaviour
     [SerializeField]
     private CameraController mainCamScript;
 
+    [SerializeField]
+    private SpringDynamics leftClickBox;
+    [SerializeField]
+    private SpringDynamics spaceBarBox;
+    [SerializeField]
+    private SpringDynamics WASDBox;
+    [SerializeField]
+    private GameObject timerHolder;
+    [SerializeField]
+    private SpringDynamics directionArrows;
+    [SerializeField]
+    private GameObject invisibleWall;
+
+    private bool introDone = false;
+    private bool partOne = false;
+    private bool partTwo = false;
+    private bool firstEntered = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,13 +90,54 @@ public class RoundScript : MonoBehaviour
         pauseShade.color = newShadeColor;
 
         song.pitch = Time.timeScale;
+
+        //Intro Tech
+        if (!introDone)
+        {
+            if (leftClickBox.transform.childCount < 2 && !partOne)
+            {
+                leftClickBox.GetComponentInChildren<Rigidbody2D>().WakeUp();
+                leftClickBox.GetComponentInChildren<Rigidbody2D>().velocity = new Vector2(-5, 5);
+                leftClickBox.GetComponentInChildren<Rigidbody2D>().angularVelocity = 10.0f;
+                spaceBarBox.SwitchPos();
+                partOne = true;
+            }
+            else if(spaceBarBox.transform.childCount < 2 && !partTwo)
+            {
+                spaceBarBox.GetComponentInChildren<Rigidbody2D>().WakeUp();
+                spaceBarBox.GetComponentInChildren<Rigidbody2D>().velocity = new Vector2(-5, 5);
+                spaceBarBox.GetComponentInChildren<Rigidbody2D>().angularVelocity = 10.0f;
+                WASDBox.SwitchPos();
+                partTwo = true;
+            }
+            else if (WASDBox.transform.childCount < 2)
+            {
+                WASDBox.GetComponentInChildren<Rigidbody2D>().WakeUp();
+                WASDBox.GetComponentInChildren<Rigidbody2D>().velocity = new Vector2(-5, 5);
+                WASDBox.GetComponentInChildren<Rigidbody2D>().angularVelocity = 10.0f;
+                directionArrows.SwitchPos();
+                Destroy(invisibleWall);
+                introDone = true;
+            }
+
+        }
     }
 
-    //EVENTS CODE... HERE??
-    //I GENUINELY DONT UNDERSTAND HOW EVENTS WORK BUT IF THIS GETS CALLED THEN ALL IS GOOD
     void AddScore(float scoreToAdd)
     {
         destructoMeterCurrentScore += scoreToAdd;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player" && !firstEntered)
+        {
+            GetComponent<AudioLowPassFilter>().enabled = false;
+            timerHolder.GetComponent<SpringDynamics>().SwitchPos();
+            timerHolder.transform.GetComponentInChildren<Timer>().StartTimer();
+            Camera.main.GetComponent<SoundScript>().PlaySoundsEcho(4);
+            song.PlayDelayed(5.0f);
+        }
     }
 
 }
