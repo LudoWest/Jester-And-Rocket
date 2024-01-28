@@ -98,6 +98,7 @@ public class RoundScript : MonoBehaviour
         }
 
         destructoMeter.fillAmount = Mathf.Lerp(destructoMeter.fillAmount, destructoMeterCurrentScore / destructoMeterMaxScore, Time.deltaTime);
+        destructoMeter.gameObject.GetComponent<UIShake>().shakeIntensity = destructoMeter.fillAmount * 8;
 
         Color newShadeColor = Color.black;
         newShadeColor.a = Mathf.Lerp(0.5f, 0.0f, Time.timeScale);
@@ -118,6 +119,7 @@ public class RoundScript : MonoBehaviour
                     alarmTime = 5.0f;
                     alarmHolder.SwitchPos();
                     alarmPulser.StartPulse();
+                    timerHolder.transform.GetComponentInChildren<UIShake>().shakeIntensity = 7;
                     song.clip = doubleSpeed;
                     songTimer = 88.0f;
                     song.Play();
@@ -128,6 +130,7 @@ public class RoundScript : MonoBehaviour
                     alarmTime = 5.0f;
                     alarmHolder.SwitchPos();
                     alarmPulser.StartPulse();
+                    timerHolder.transform.GetComponentInChildren<UIShake>().shakeIntensity = 4;
                     song.clip = fiftyPercentSpeed;
                     songTimer = 117.0f;
                     song.Play();

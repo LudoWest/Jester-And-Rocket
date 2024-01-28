@@ -8,7 +8,7 @@ public class UIShake : MonoBehaviour
     private RectTransform rect;
     private Vector2 originalPos;
     [SerializeField]
-    private float shakeIntensity;
+    public float shakeIntensity;
 
     // Start is called before the first frame update
     void Start()

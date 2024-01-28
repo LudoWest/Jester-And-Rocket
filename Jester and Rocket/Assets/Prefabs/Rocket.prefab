@@ -187,7 +187,7 @@ MonoBehaviour:
   rocketSpeed: 60
   rocketSpeedUp: 2
   rocketOffset: 1
-  explosionRadius: 1.5
+  explosionRadius: 1.25
   rocketExplosionForce: 8
   explosionParticles: {fileID: 760689972488521998, guid: 8f6ee551c119e604da6b0b53352c5acd, type: 3}
   despawnTimer: 5
