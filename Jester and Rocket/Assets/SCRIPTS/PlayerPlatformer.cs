@@ -19,6 +19,8 @@ public class PlayerPlatformer : MonoBehaviour
     [SerializeField]
     float squashStretchCutoff = 0.5f;
     [SerializeField]
+    float squashStretchScale = 0.6f;
+    [SerializeField]
     private float moveRotationFactor = 1.0f;
     [SerializeField]
     private float moveRotationSpeed = 2.0f;
@@ -115,7 +117,7 @@ public class PlayerPlatformer : MonoBehaviour
         playerSprite.Rotate(Vector3.forward,currentRotation * moveRotationFactor - playerSprite.localRotation.z * Mathf.Rad2Deg);
 
         //Change the player sprite's X size based on Y velocity.
-        playerSprite.localScale = new Vector3(Mathf.Lerp(1.0f, 0.6f, Mathf.Abs(RB.velocity.y * 0.1f) - squashStretchCutoff), 1, 1);
+        playerSprite.localScale = new Vector3(Mathf.Lerp(1.0f, squashStretchScale, Mathf.Abs(RB.velocity.y * 0.1f) - squashStretchCutoff), 1, 1);
 
         //Set 'previous velocity' of frame to be used in camera shake next frame
         previousVelocity = RB.velocity;
