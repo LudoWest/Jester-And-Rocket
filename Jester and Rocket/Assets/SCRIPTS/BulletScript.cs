@@ -69,6 +69,7 @@ public class RocketScript : MonoBehaviour
                         if (!rubbled)
                         {
                             Camera.main.GetComponent<SoundScript>().PlaySounds(1, true);
+                            rubbled = true;
                         }
                     }
                     chunkCollider.attachedRigidbody.velocity += (Vector2)((chunkCollider.transform.position - transform.position).normalized * rocketExplosionForce);
