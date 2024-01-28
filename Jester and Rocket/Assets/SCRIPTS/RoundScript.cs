@@ -17,12 +17,18 @@ public class RoundScript : MonoBehaviour
     private Image pauseShade;
     [SerializeField]
     private AudioSource song;
+    private float songTimer = 180.0f;
+    private float alarmTime = 5000.0f;
 
     [SerializeField]
     private Image destructoMeter;
     private float destructoMeterCurrentScore;
     [SerializeField]
     private float destructoMeterMaxScore;
+    [SerializeField]
+    private SpringDynamics alarmHolder;
+    [SerializeField]
+    private PulseImage alarmPulser;
 
     [SerializeField]
     private CameraController mainCamScript;
@@ -40,10 +46,17 @@ public class RoundScript : MonoBehaviour
     [SerializeField]
     private GameObject invisibleWall;
 
+    [SerializeField]
+    private AudioClip fiftyPercentSpeed;
+    [SerializeField]
+    private AudioClip doubleSpeed;
+
     private bool introDone = false;
     private bool partOne = false;
     private bool partTwo = false;
     private bool firstEntered = false;
+    private bool songPlaying = false;
+    private AudioClip firstSong;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +67,7 @@ public class RoundScript : MonoBehaviour
         pauseIcon2.AltSizeTeleport();
         pauseIcon2.SwitchSize();
 
+        firstSong = song.clip;
 		RubbleScript.OnRubbleDestroyed += RubbleScript_OnRubbleDestroyed;
     }
 
@@ -90,6 +104,46 @@ public class RoundScript : MonoBehaviour
         pauseShade.color = newShadeColor;
 
         song.pitch = Time.timeScale;
+
+        //Song Tech
+        if (songPlaying)
+        {
+            songTimer -= Time.deltaTime;
+            if(songTimer < 0)
+            {
+                if(song.clip == fiftyPercentSpeed)
+                {
+                    Camera.main.GetComponent<SoundScript>().PlaySoundsEcho(0);
+                    Camera.main.GetComponent<SoundScript>().PlaySoundsEcho(0);
+                    alarmTime = 5.0f;
+                    alarmHolder.SwitchPos();
+                    alarmPulser.StartPulse();
+                    song.clip = doubleSpeed;
+                    songTimer = 88.0f;
+                    song.Play();
+                }
+                else if (song.clip != doubleSpeed)
+                {
+                    Camera.main.GetComponent<SoundScript>().PlaySoundsEcho(0);
+                    alarmTime = 5.0f;
+                    alarmHolder.SwitchPos();
+                    alarmPulser.StartPulse();
+                    song.clip = fiftyPercentSpeed;
+                    songTimer = 117.0f;
+                    song.Play();
+                }
+            }
+        }
+
+        if(alarmTime < 0)
+        {
+            alarmHolder.SwitchPos();
+            alarmTime = 5000.0f;
+        }
+        else
+        {
+            alarmTime -= Time.deltaTime;
+        }
 
         //Intro Tech
         if (!introDone)
@@ -137,6 +191,7 @@ public class RoundScript : MonoBehaviour
             timerHolder.transform.GetComponentInChildren<Timer>().StartTimer();
             Camera.main.GetComponent<SoundScript>().PlaySoundsEcho(4);
             song.PlayDelayed(5.0f);
+            songPlaying = true;
         }
     }
 

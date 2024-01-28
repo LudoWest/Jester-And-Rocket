@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TMP_Text text;
 
-    private float timer = 180.0f;
+    private float timer = 385.0f;
     private bool isTimer = false;
 
     // Start is called before the first frame update
