@@ -49,7 +49,7 @@ public class CameraController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            //Application.Quit();
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
