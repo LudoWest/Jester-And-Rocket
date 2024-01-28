@@ -98,7 +98,7 @@ public class RoundScript : MonoBehaviour
         }
 
         destructoMeter.fillAmount = Mathf.Lerp(destructoMeter.fillAmount, destructoMeterCurrentScore / destructoMeterMaxScore, Time.deltaTime);
-        destructoMeter.gameObject.GetComponent<UIShake>().shakeIntensity = destructoMeter.fillAmount * 8;
+        destructoMeter.transform.parent.GetComponent<UIShake>().shakeIntensity = destructoMeter.fillAmount * 8;
 
         Color newShadeColor = Color.black;
         newShadeColor.a = Mathf.Lerp(0.5f, 0.0f, Time.timeScale);
